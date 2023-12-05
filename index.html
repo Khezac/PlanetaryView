@@ -12,7 +12,7 @@
         <header class="topheader">
             <img class="topheader-logo" src="IMG/Logos/PageLogo/GradientLogo.png" alt="TopLeftHeaderLogo">
             <nav class="topheader-menu">
-                <a href="#bottomfooter-releasedate" class="topheader-menu-item">Planets</a>
+                <a href="#bottomfooter-releasedate" class="topheader-menu-item">Planets</a><!--#bottomfooter-releasedate é apenas um placeholder, no lugar entrara as coordenadas dos cards interativos.-->
                 <a class="topheader-menu-item" href="https://github.com/Khezac/PlanetaryView" target="_blank">Open Source</a>
                 <a class="topheader-menu-item">About</a>
             </nav>
@@ -32,9 +32,13 @@
 
         <section class="content-section1">
             <img class="content-section1-logo" src="IMG/Logos/PageLogo/BlueGlobeLogo.png" alt="BlueGlobeSection1"/>
-            <h1 class="content-section1-title">Planetary View</h1>
-            <h2 class="content-section1-caption">Olá!!! Seja bem-vindo(a) ao <strong>Planetary View </strong>, aqui você pode aprender sobre os planetas do nosso incrível sistema solar.</h2>
-            <button class="content-section1-button">Ver mais...</button>
+
+            <div class="content-section1-presentation">
+                <img class="content-section1-presentation-title" src="IMG/Logos/PageLogo/Section1MainTitleBlue.png" alt="Section1Title"/>
+                <h2 class="content-section1-caption1">Olá! Seja bem-vindo(a) ao <strong>Planetary View!!!</strong></h2><br>
+                <h2 class="content-section1-caption2">Aqui você pode aprender sobre os planetas do nosso incrível sistema solar.</h2>
+                <a href="#bottomfooter-releasedate"><button class="content-section1-button">Ver mais...</button></a><!--#bottomfooter-releasedate é apenas um placeholder, no lugar entrara as coordenadas dos cards interativos.-->
+            </div>
         </section>
     </div>
     <main class="content">
@@ -83,17 +87,21 @@
 
     <footer class="bottomfooter">
         <img class="bottomfooter-logo" src="IMG/Logos/PageLogo/GrayLogo.png" alt="BottomLeftFooterLogo">
-        <a class="bottomfooter-creator" href="https://github.com/Khezac" target="_blank">@Khezac</a>
-        <p id="bottomfooter-releasedate">Released in December 4th 2023.</p>
+
+        <div class="bottomfooter-info">
+            <a class="bottomfooter-creator" href="https://github.com/Khezac" target="_blank">@Khezac</a>
+            <p id="bottomfooter-releasedate">, Released in December 4th 2023.</p>
+        </div>
+
         <div class="bottomfooter-socialmedia">
-            <a href="https://github.com/Khezac/" target="_blank">
-                <img id="bottomfooter-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/GitHubLogo.png" alt="BottomRightFooterGitHubLogo">
+            <a class="bottomfooter-socialmedia-logo" href="https://github.com/Khezac/" target="_blank">
+                <img class="bottomfooter-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/GitHubLogo.png" alt="BottomRightFooterGitHubLogo">
             </a>
-            <a href="https://www.instagram.com/zac.mntr/" target="_blank">
-                <img id="bottomfooter-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/InstagramLogo.png" alt="BottomRightFooterInstagramLogo">
+            <a class="bottomfooter-socialmedia-logo" href="https://www.instagram.com/zac.mntr/" target="_blank">
+                <img class="bottomfooter-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/InstagramLogo.png" alt="BottomRightFooterInstagramLogo">
             </a>
-            <a href="https://twitter.com/khezac" target="_blank">
-                <img id="bottomfooter-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/XLogo.png" alt="BottomRightFooterTwitterLogo">
+            <a class="bottomfooter-socialmedia-logo" href="https://twitter.com/khezac" target="_blank">
+                <img class="bottomfooter-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/XLogo.png" alt="BottomRightFooterTwitterLogo">
             </a>
         </div>
     </footer>

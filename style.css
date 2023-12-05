@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
+
 *{
     padding:0;
     margin:0;
@@ -51,3 +52,108 @@ body{
 .topheader-socialmedia-logo{
     width:25%;
 }
+/* Footer things */
+.bottomfooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding:24px;
+}
+
+.bottomfooter-logo{
+    width: 9%;
+}
+
+.topheader-menu{
+    display:flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.bottomfooter-info{
+    display:flex;
+    flex-direction: row;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    color: rgb(218, 227, 235);
+}
+
+.topheader-menu-item:hover, .topheader-socialmedia-logo:hover{
+    opacity:0.8;
+}
+
+.bottomfooter-socialmedia{
+    width:10%
+}
+
+.bottomfooter-socialmedia-logo{
+    width:25%;
+}
+/* Footer things */
+
+.content-section1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    margin-left:9em;
+    min-height: 85vh;
+}
+
+.content-section1-logo{
+    width: 400px;
+    margin-bottom:5rem;
+}
+
+.content-section1-presentation{
+    width: 80ch;
+    margin-bottom:5rem;
+}
+
+.content-section1-presentation-title{
+    width: 60%;
+    margin-left:70px;
+}
+
+.content-section1-caption1{
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    margin-left:30px
+}
+
+.content-section1-caption2{
+    font-family: 'Sarala', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.content-section1-button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#40ffc6, #4254f3 50%,#0037eb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  opacity:0.5;
+  max-width: 100%;
+  transition: 150ms;
+}
+
+.content-section1-button:hover {
+  opacity:1.0;
+}
+
