@@ -8,34 +8,38 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <header class="topheader">
-        <img class="topheader-logo" src="IMG/Logos/PageLogo/GradientLogo.png" alt="TopLeftHeaderLogo">
-        <nav class="topheader-menu">
-            <a class="topheader-menu-item">Planets</a>
-            <a class="topheader-menu-item" href="https://github.com/Khezac/PlanetaryView" target="_blank">Open Source</a>
-            <a class="topheader-menu-item">About</a>
-
+    <div id="backgrounder">
+        <header class="topheader">
+            <img class="topheader-logo" src="IMG/Logos/PageLogo/GradientLogo.png" alt="TopLeftHeaderLogo">
+            <nav class="topheader-menu">
+                <a href="#bottomfooter-releasedate" class="topheader-menu-item">Planets</a>
+                <a class="topheader-menu-item" href="https://github.com/Khezac/PlanetaryView" target="_blank">Open Source</a>
+                <a class="topheader-menu-item">About</a>
+            </nav>
+            
             <div class="topheader-socialmedia">
-                <a class="topheader-socialmedia-github" href="https://github.com/Khezac/" target="_blank">
-                    <img src="IMG/Logos/SocialMediaLogo/GitHubLogo.png" alt="TopRightHeaderGitHubLogo">
+                <a class="topheader-socialmedia-logo" href="https://github.com/Khezac/" target="_blank">
+                    <img class="topheader-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/GitHubLogo.png" alt="TopRightHeaderGitHubLogo">
                 </a>
-                <a class="topheader-socialmedia-instagram" href="https://www.instagram.com/zac.mntr/" target="_blank">
-                    <img src="IMG/Logos/SocialMediaLogo/InstagramLogo.png" alt="TopRightHeaderInstagramLogo">
+                <a class="topheader-socialmedia-logo" href="https://www.instagram.com/zac.mntr/" target="_blank">
+                    <img class="topheader-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/InstagramLogo.png" alt="TopRightHeaderInstagramLogo">
                 </a>
-                <a class="topheader-socialmedia-twitter" href="https://twitter.com/khezac" target="_blank">
-                    <img src="IMG/Logos/SocialMediaLogo/XLogo.png" alt="TopRightHeaderTwitterLogo">
+                <a class="topheader-socialmedia-logo" href="https://twitter.com/khezac" target="_blank">
+                    <img class="topheader-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/XLogo.png" alt="TopRightHeaderTwitterLogo">
                 </a>
             </div>
-        </nav>
-    </header>
+        </header>
 
-    <main class="content">
         <section class="content-section1">
             <img class="content-section1-logo" src="IMG/Logos/PageLogo/BlueGlobeLogo.png" alt="BlueGlobeSection1"/>
             <h1 class="content-section1-title">Planetary View</h1>
             <h2 class="content-section1-caption">Olá!!! Seja bem-vindo(a) ao <strong>Planetary View </strong>, aqui você pode aprender sobre os planetas do nosso incrível sistema solar.</h2>
             <button class="content-section1-button">Ver mais...</button>
         </section>
+    </div>
+    <main class="content">
+        
+
 
         <section class="content-section2">
             <!--Cards Interativos-->
@@ -80,16 +84,16 @@
     <footer class="bottomfooter">
         <img class="bottomfooter-logo" src="IMG/Logos/PageLogo/GrayLogo.png" alt="BottomLeftFooterLogo">
         <a class="bottomfooter-creator" href="https://github.com/Khezac" target="_blank">@Khezac</a>
-        <p class="bottomfooter-releasedate">Released in December 4th 2023.</p>
+        <p id="bottomfooter-releasedate">Released in December 4th 2023.</p>
         <div class="bottomfooter-socialmedia">
-            <a class="bottomfooter-socialmedia-github" href="https://github.com/Khezac/" target="_blank">
-                <img src="IMG/Logos/SocialMediaLogo/GitHubLogo.png" alt="BottomRightFooterGitHubLogo">
+            <a href="https://github.com/Khezac/" target="_blank">
+                <img id="bottomfooter-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/GitHubLogo.png" alt="BottomRightFooterGitHubLogo">
             </a>
-            <a class="bottomfooter-socialmedia-instagram" href="https://www.instagram.com/zac.mntr/" target="_blank">
-                <img src="IMG/Logos/SocialMediaLogo/InstagramLogo.png" alt="BottomRightFooterInstagramLogo">
+            <a href="https://www.instagram.com/zac.mntr/" target="_blank">
+                <img id="bottomfooter-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/InstagramLogo.png" alt="BottomRightFooterInstagramLogo">
             </a>
-            <a class="bottomfooter-socialmedia-twitter" href="https://twitter.com/khezac" target="_blank">
-                <img src="IMG/Logos/SocialMediaLogo/XLogo.png" alt="BottomRightFooterTwitterLogo">
+            <a href="https://twitter.com/khezac" target="_blank">
+                <img id="bottomfooter-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/XLogo.png" alt="BottomRightFooterTwitterLogo">
             </a>
         </div>
     </footer>
