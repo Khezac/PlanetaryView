@@ -12,7 +12,7 @@
         <header class="topheader">
             <img class="topheader-logo" src="IMG/Logos/PageLogo/GradientLogo.png" alt="TopLeftHeaderLogo">
             <nav class="topheader-menu">
-                <a href="#bottomfooter-releasedate" class="topheader-menu-item">Planets</a><!--#bottomfooter-releasedate é apenas um placeholder, no lugar entrara as coordenadas dos cards interativos.-->
+                <a href="#planets" class="topheader-menu-item">Planets</a><!--#bottomfooter-releasedate é apenas um placeholder, no lugar entrara as coordenadas dos cards interativos.-->
                 <a class="topheader-menu-item" href="https://github.com/Khezac/PlanetaryView" target="_blank">Open Source</a>
                 <a class="topheader-menu-item">About</a>
             </nav>
@@ -37,16 +37,97 @@
                 <img class="content-section1-presentation-title" src="IMG/Logos/PageLogo/Section1MainTitleBlue.png" alt="Section1Title"/>
                 <h2 class="content-section1-caption1">Olá! Seja bem-vindo(a) ao <strong>Planetary View!!!</strong></h2><br>
                 <h2 class="content-section1-caption2">Aqui você pode aprender sobre os planetas do nosso incrível sistema solar.</h2>
-                <a href="#bottomfooter-releasedate"><button class="content-section1-button">Ver mais...</button></a><!--#bottomfooter-releasedate é apenas um placeholder, no lugar entrara as coordenadas dos cards interativos.-->
+                <a href="#planets" class="scrollpagelink"><button class="content-section1-button">Ver mais...</button></a><!--#bottomfooter-releasedate é apenas um placeholder, no lugar entrara as coordenadas dos cards interativos.-->
             </div>
         </section>
     </div>
+
     <main class="content">
-        
-
-
-        <section class="content-section2">
-            <!--Cards Interativos-->
+        <section id="planets" class="content-section2-planets">
+            <div class="wrapper">
+                <div class="container">
+                    <input type="radio" name="slide" id="mercury">
+                    <label for="mercury" class="card">
+                        <div class="row">
+                            <div class="icon">1</div>
+                            <div class="description">
+                                <h4>Mercurio</h4>
+                                <p>information about mercury here...</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="venus">
+                    <label for="venus" class="card">
+                        <div class="row">
+                            <div class="icon">2</div>
+                            <div class="description">
+                                <h4>Venus</h4>
+                                <p>information about venus here...</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="earth">
+                    <label for="earth" class="card">
+                        <div class="row">
+                            <div class="icon">3</div>
+                            <div class="description">
+                                <h4>Terra</h4>
+                                <p>information about earth here...</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="mars">
+                    <label for="mars" class="card">
+                        <div class="row">
+                            <div class="icon">4</div>
+                            <div class="description">
+                                <h4>Marte</h4>
+                                <p>information about mars here...</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="jupiter">
+                    <label for="jupiter" class="card">
+                        <div class="row">
+                            <div class="icon">5</div>
+                            <div class="description">
+                                <h4>Jupiter</h4>
+                                <p>information about jupiter here...</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="saturn">
+                    <label for="saturn" class="card">
+                        <div class="row">
+                            <div class="icon">6</div>
+                            <div class="description">
+                                <h4>Saturno</h4>
+                                <p>information about saturn here...</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="uranus">
+                    <label for="uranus" class="card">
+                        <div class="row">
+                            <div class="icon">7</div>
+                            <div class="description">
+                                <h4>Urano</h4>
+                                <p>information about uranus here...</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="neptune">
+                    <label for="neptune" class="card">
+                        <div class="row">
+                            <div class="icon">8</div>
+                            <div class="description">
+                                <h4>Netuno</h4>
+                                <p>information about neptune here...</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
         </section>
 
         <section class="content-section3">
@@ -105,5 +186,8 @@
             </a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>

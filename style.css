@@ -12,7 +12,8 @@ body{
     font-size: 100%;
 }
 
-#backgrounder{
+/* HEADER */
+#backgrounder{ /* section 1 background */
     background-image: linear-gradient(black 1%,rgba(255, 255, 255, 0)99%),url(IMG/Backgrounds/Section1Background.jpg);
     background-size: 100%;
 }
@@ -52,18 +53,6 @@ body{
 .topheader-socialmedia-logo{
     width:25%;
 }
-/* Footer things */
-.bottomfooter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding:24px;
-}
-
-.bottomfooter-logo{
-    width: 9%;
-}
 
 .topheader-menu{
     display:flex;
@@ -71,27 +60,13 @@ body{
     gap: 100px;
 }
 
-.bottomfooter-info{
-    display:flex;
-    flex-direction: row;
-    font-family: 'Righteous', sans-serif;
-    font-weight: 400;
-    color: rgb(218, 227, 235);
-}
-
 .topheader-menu-item:hover, .topheader-socialmedia-logo:hover{
     opacity:0.8;
 }
 
-.bottomfooter-socialmedia{
-    width:10%
-}
+/* HEADER */
 
-.bottomfooter-socialmedia-logo{
-    width:25%;
-}
-/* Footer things */
-
+/* TOP PAGE SECTION1 */
 .content-section1{
     display: flex;
     flex-direction: row;
@@ -156,4 +131,155 @@ body{
 .content-section1-button:hover {
   opacity:1.0;
 }
+/* TOP PAGE SECTION1 */
 
+/* CARDS */
+.content-section2-planets{
+    background-image: url(https://i.ebayimg.com/images/g/ZdUAAOSwanBk8m6h/s-l1200.webp);
+    background-size: 100%;
+}
+
+.wrapper{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height:450px;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card{
+    width:80px;
+    border-radius:.75rem;
+    background-size:cover;
+    cursor: pointer;
+    overflow:hidden;
+    border-radius:2rem;
+    margin:0 10px;
+    display:flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0,8);
+}
+
+.card > .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon{
+    font-family: 'Sarala', sans-serif;
+    background: #223;
+    color: white;
+    border-radius:50%;
+    width: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:15px;
+}
+
+.card > .row> .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height:80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+    font-family: 'Sarala', sans-serif;
+}
+
+.description h4 {
+    text-transform: uppercase;
+    font-family: 'Righteous', sans-serif;
+}
+
+input{
+    display: none;  
+}
+
+input:checked + label {
+    width: 450px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for='mercury'] {
+    background-image: url(IMG/Planets/1-Mercury/MercuryBackground.jpg);
+}
+.card[for='venus'] {
+    background-image: url(IMG/Planets/2-Venus/VenusBackground.jpg);
+}
+.card[for='earth'] {
+    background-image: url(IMG/Planets/3-Earth/EarthBackground.jpg);
+}
+.card[for='mars'] {
+    background-image: url(IMG/Planets/4-Mars/MarsBackground.jpg);
+}
+.card[for='jupiter'] {
+    background-image: url(IMG/Planets/5-Jupiter/JupiterBackground.png);
+}
+.card[for='saturn'] {
+    background-image: url(IMG/Planets/6-Saturn/SaturnBackground.png);
+}
+.card[for='uranus'] {
+    background-image: url(IMG/Planets/7-Uranus/UranusBackground.jpg);
+}
+.card[for='neptune'] {
+    background-image: url(IMG/Planets/8-Neptune/NeptuneBackground.jpg);
+}
+/* CARDS */
+
+/* FOOTER */
+.bottomfooter{
+    background-color: #223;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding:24px;
+}
+
+.bottomfooter-logo{
+    width: 9%;
+}
+
+.bottomfooter-info{
+    display:flex;
+    flex-direction: row;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    color: rgb(218, 227, 235);
+}
+
+.bottomfooter-creator{
+    color:#b0b0ba
+}
+
+.bottomfooter-socialmedia{
+    width:10%
+}
+
+.bottomfooter-socialmedia-logo{
+    width:25%;
+}
+/* FOOTER */
