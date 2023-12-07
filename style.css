@@ -249,6 +249,12 @@ input:checked + label .description {
 }
 /* CARDS */
 
+/* INFO SECTION */
+#planetInfoGlobe{
+    max-width: 300px;
+}
+/* INFO SECTION */
+
 /* FOOTER */
 .bottomfooter{
     background-color: #223;
