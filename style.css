@@ -342,6 +342,10 @@ input:checked + label .description {
     width: 100%;
 }
 
+.bottomfooter-logo:hover {
+    opacity: 0.6;
+}
+
 .bottomfooter-info{
     display:flex;
     flex-direction: row;
@@ -360,6 +364,10 @@ input:checked + label .description {
 
 .bottomfooter-socialmedia-logo{
     width:25%;
+}
+
+.bottomfooter-socialmedia-logo:hover{
+    opacity:0.6;
 }
 
 .returnhomelink{
