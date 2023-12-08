@@ -134,12 +134,12 @@ body{
 /* TOP PAGE SECTION1 */
 
 /* CARDS */
-.content-section2-planets{
+.content-section2-planetscards{
     background-image: url(https://i.ebayimg.com/images/g/ZdUAAOSwanBk8m6h/s-l1200.webp);
     background-size: 100%;
 }
 
-.wrapper{
+.cardswrapper{
     width:100%;
     height:100vh;
     display: flex;
@@ -253,6 +253,76 @@ input:checked + label .description {
 #planetInfoGlobe{
     max-width: 300px;
 }
+
+.content-section3-planetsinfo{
+    background-image: url(IMG/Backgrounds/InfoBackground.jpg);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.planetsinfowrapper{
+    min-width:1280px;
+    min-height: 650px;
+}
+
+.planetsBasicInfo {
+    margin-left: 5%;
+    font-family: 'Righteous', sans-serif;
+    width: 35ch;
+}
+
+.content-section3-planetsleft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20%;
+    margin: 9%;
+    gap: 10%
+}
+.content-section3-planetsright{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 20%;
+    margin: 9%;
+    gap: 10%
+}
+
+.content-section3-planets-maininfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content-section3-planets-maininfo-title{
+    font-family: 'Righteous', sans-serif;
+    font-size: 38px;
+}
+
+.content-section3-planets-maininfo-paragraph{
+    font-family: 'Sarala', sans-serif;
+}
+
+.bottom-options-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Righteous', sans-serif;
+    color:white;
+    gap:10px
+}
+
+.back-to-home, .back-to-menu{
+    color:white;
+}
+
+.info-bottom-options-menu:hover, .info-bottom-options-home:hover {
+    opacity: 0.4;
+}
 /* INFO SECTION */
 
 /* FOOTER */
@@ -266,7 +336,7 @@ input:checked + label .description {
 }
 
 .bottomfooter-logo{
-    width: 9%;
+    width: 100%;
 }
 
 .bottomfooter-info{
@@ -287,5 +357,10 @@ input:checked + label .description {
 
 .bottomfooter-socialmedia-logo{
     width:25%;
+}
+
+.returnhomelink{
+    width: 95px;
+    height: 47px;
 }
 /* FOOTER */

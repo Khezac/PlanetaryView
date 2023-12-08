@@ -9,10 +9,10 @@
 </head>
 <body>
     <div id="backgrounder">
-        <header class="topheader">
+        <header id="home" class="topheader">
             <img class="topheader-logo" src="IMG/Logos/PageLogo/GradientLogo.png" alt="TopLeftHeaderLogo">
             <nav class="topheader-menu">
-                <a href="#planets" class="topheader-menu-item">Planets</a><!--#bottomfooter-releasedate é apenas um placeholder, no lugar entrara as coordenadas dos cards interativos.-->
+                <a href="#planets" class="topheader-menu-item">Planets</a>
                 <a class="topheader-menu-item" href="https://github.com/Khezac/PlanetaryView" target="_blank">Open Source</a>
                 <a class="topheader-menu-item">About</a>
             </nav>
@@ -35,7 +35,7 @@
 
             <div class="content-section1-presentation">
                 <img class="content-section1-presentation-title" src="IMG/Logos/PageLogo/Section1MainTitleBlue.png" alt="Section1Title"/>
-                <h2 class="content-section1-caption1">Olá! Seja bem-vindo(a) ao <strong>Planetary View!!!</h2><br>
+                <h2 class="content-section1-caption1">Olá! Seja bem-vindo(a) ao Planetary View!!!</h2><br>
                 <h2 class="content-section1-caption2">Aqui você pode aprender sobre os planetas do nosso incrível sistema solar.</h2>
                 <a href="#planets" class="scrollpagelink"><button class="content-section1-button">Ver mais...</button></a><!--#bottomfooter-releasedate é apenas um placeholder, no lugar entrara as coordenadas dos cards interativos.-->
             </div>
@@ -43,8 +43,8 @@
     </div>
 
     <main class="content">
-        <section id="planets" class="content-section2-planets">
-            <div class="wrapper">
+        <section id="planets" class="content-section2-planetscards" alt="cards">
+            <div class="cardswrapper">
                 <div class="container">
                     <input type="radio" name="slide" id="mercury">
                     <label for="mercury" class="card">
@@ -52,210 +52,386 @@
                             <div class="icon">1</div>
                             <div class="description">
                                 <h4>Mercurio</h4>
-                                <p>information about mercury here...</p>
+                                <p>O mais veloz mensageiro.<a href="#mercuryinfo" class="scrollpagelink"> Ver mais...</a></p>
                             </div>
                         </div>
                     </label>
+
                     <input type="radio" name="slide" id="venus">
                     <label for="venus" class="card">
                         <div class="row">
                             <div class="icon">2</div>
                             <div class="description">
                                 <h4>Venus</h4>
-                                <p>information about venus here...</p>
+                                <p>Terceiro corpo celeste mais brilhante do céu.<a href="#venusinfo" class="scrollpagelink"> Ver mais...</a></p>
                             </div>
                         </div>
                     </label>
+
                     <input type="radio" name="slide" id="earth">
                     <label for="earth" class="card">
                         <div class="row">
                             <div class="icon">3</div>
                             <div class="description">
                                 <h4>Terra</h4>
-                                <p>information about earth here...</p>
+                                <p>Grandioso planeta água.<a href="#earthinfo" class="scrollpagelink"> Ver mais...</a></p>
                             </div>
                         </div>
                     </label>
+
                     <input type="radio" name="slide" id="mars">
                     <label for="mars" class="card">
                         <div class="row">
                             <div class="icon">4</div>
                             <div class="description">
                                 <h4>Marte</h4>
-                                <p>information about mars here...</p>
+                                <p>O mais violento entre os planetas.<a href="#marsinfo" class="scrollpagelink"> Ver mais...</a></p>
                             </div>
                         </div>
                     </label>
+
                     <input type="radio" name="slide" id="jupiter">
                     <label for="jupiter" class="card">
                         <div class="row">
                             <div class="icon">5</div>
                             <div class="description">
                                 <h4>Jupiter</h4>
-                                <p>information about jupiter here...</p>
+                                <p>Pai romano de Marte.<a href="#jupiterinfo" class="scrollpagelink"> Ver mais...</a></p>
                             </div>
                         </div>
                     </label>
+
                     <input type="radio" name="slide" id="saturn">
                     <label for="saturn" class="card">
                         <div class="row">
                             <div class="icon">6</div>
                             <div class="description">
                                 <h4>Saturno</h4>
-                                <p>information about saturn here...</p>
+                                <p>Gigante gasoso pai de júpiter.<a href="#saturninfo" class="scrollpagelink"> Ver mais...</a></p>
                             </div>
                         </div>
                     </label>
+
                     <input type="radio" name="slide" id="uranus">
                     <label for="uranus" class="card">
                         <div class="row">
                             <div class="icon">7</div>
                             <div class="description">
                                 <h4>Urano</h4>
-                                <p>information about uranus here...</p>
+                                <p>Filho de gaia, personificação do céu.<a href="#uranusinfo" class="scrollpagelink"> Ver mais...</a></p>
                             </div>
                         </div>
                     </label>
+
                     <input type="radio" name="slide" id="neptune">
                     <label for="neptune" class="card">
                         <div class="row">
                             <div class="icon">8</div>
                             <div class="description">
                                 <h4>Netuno</h4>
-                                <p>information about neptune here...</p>
+                                <p>O rei dos oceanos.<a href="#neptuneinfo" class="scrollpagelink"> Ver mais...</a></p>
                             </div>
                         </div>
                     </label>
+
                 </div>
             </div>
         </section>
 
         <section class="content-section3-planetsinfo">
-            <div class="content-section3-mercury">
-                <img class="content-section3-mercurybackground-image" src="" alt="PlanetMercuryBackground">
-                <div class="content-section3-mercury-basicinfo">
-                    <img id="planetInfoGlobe" class="content-section3-mercury-image" src="IMG/Planets/1-Mercury/MercuryGlobe.png" alt="PlanetMercury">
-                    <ul class="planetsBasicInfo">
-                        <li><strong>Tamanho:</strong> 4878 km</li>
-                        <li><strong>Velocidade:</strong> aprox. 47,87 km/s</li>
-                        <li><strong>Um ano:</strong> 88 dias </li>
-                        <li><strong>Um dia:</strong> 59 dias </li>
-                        <li><strong>Distancia do Sol:</strong> 57,9 milhões de km</li>
-                    </ul>
+            <div class="planetsinfowrapper" id="mercuryinfo">
+                <div class="content-section3-planetsleft">
+                    <div class="content-section3-mercury-basicinfo">
+                        <img id="planetInfoGlobe" class="content-section3-mercury-image" src="IMG/Planets/1-Mercury/MercuryGlobe.png" alt="PlanetMercury">
+                        <ul class="planetsBasicInfo">
+                            <li>Tamanho: 4.878 km</li>
+                            <li>Um ano: 88 dias </li>
+                            <li>Um dia: 59 dias </li>
+                            <li>Velocidade de translação: 44,87 km/s</li>
+                            <li>Velocidade de rotação: 10,83 km/h</li>
+                            <li>Distancia do Sol: 57,9 milhões km</li>
+                        </ul>
+                    </div>
+                    <div class="content-section3-planets-maininfo">
+                        <h1 class="content-section3-planets-maininfo-title">Mercúrio, o mensageiro dos deuses.</h1>
+                        <p class="content-section3-planets-maininfo-paragraph">Os gregos o chamavam de Hermes, em alusão ao mensageiro do Olimpo mais veloz.
+                        <strong>Mercúrio</strong> é a versão romana desse deus. Seu movimento de rotação é executado apenas três vezes durante duas órbitas, com seu eixo perpendicular ao plano da órbita, por isso, Mercúrio não apresenta estações do ano e alguns locais não recebem a luz do sol. A proximidade com o sol faz com que suas temperaturas sejam muito altas oque ocasiona em sua frágil atmosfera que apresenta uma pressão muito baixa, cerca de um bilhão de vezes menor do que a da Terra ao nível do mar. Oque proporciona uma fraca proteção contra meteoritos e incapacidade de se conservar as médias térmicas, levando as temperaturas em Mercúrio a variar entre 430ºC e -170ºC durante a noite.
+                        </p>
+                        <div class="bottom-options-wrapper">
+                            <div class="info-bottom-options-home">
+                                <h1><a href="#home" class="back-to-home">HOME</a></h1>
+                            </div>
+                            <span>-</span>
+                            <div class="info-bottom-options-menu">
+                                <h1><a href="#planets" class="back-to-menu">MENU</a></h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="content-cetion3-mercury-maininfo">Informações sobre mercurio</p>
+            </div>
+            
+            <div class="planetsinfowrapper" id="venusinfo">
+                <div class="content-section3-planetsright">
+                    <div class="content-section3-venus-basicinfo">
+                        <img id="planetInfoGlobe" class="content-section3-venus-image" src="IMG/Planets/2-Venus/VenusGlobe.png" alt="PlanetVenus">
+                        <ul class="planetsBasicInfo">
+                            <li>Tamanho: 12.104 km de diâmetro</li>
+                            <li>Um ano: 225 dias </li>
+                            <li>Um dia: 243 dias </li>
+                            <li>Velocidade de translação: 35,03km/s</li>
+                            <li>Velocidade de rotação: 6,52 km/h</li>
+                            <li>Distancia do Sol: 107.6 milhões km</li>
+                        </ul>
+                    </div>
+                    <div class="content-section3-planets-maininfo">
+                        <h1 class="content-section3-planets-maininfo-title">Vênus, deusa da beleza.</h1>
+                        <p class="content-section3-planets-maininfo-paragraph">
+                            Além do sol e da lua, vênus é o corpo celeste mais brilhante do céu, e nos tempos antigos era confundido com uma estrela, por isso, os romanos lhe deram o nome da deusa romana do amor e da beleza, <strong>Vênus</strong>. A sua superfície é coberta de lava e embora esteja mais distante do Sol que Mercúrio, a temperatura de Vênus é maior, chegando a 482 ºC na superfície devido ao efeito estufa dos componentes do planeta. Tem seu movimento de rotação contrario ao da maioria dos planetas, sendo de leste à oeste. Pelo menos 97% de sua composição atmosférica é feita por dióxido de carbono. Há também 3% de nitrogênio e traços de dióxido de enxofre e outros gases.
+                        </p>
+                        <div class="bottom-options-wrapper">
+                            <div class="info-bottom-options-home">
+                                <h1><a href="#home" class="back-to-home">HOME</a></h1>
+                            </div>
+                            <span>-</span>
+                            <div class="info-bottom-options-menu">
+                                <h1><a href="#planets" class="back-to-menu">MENU</a></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="content-section3-venus">
-                <img class="content-section3-venusbackground-image" src="" alt="PlanetVenusBackground">
-                <div class="content-section3-venus-basicinfo">
-                    <img id="planetInfoGlobe" class="content-section3-venus-image" src="IMG/Planets/2-Venus/VenusGlobe.png" alt="PlanetVenus">
-                    <ul class="planetsBasicInfo">
-                        <li><strong>Tamanho:</strong> 4878 km</li>
-                        <li><strong>Velocidade:</strong> aprox. 47,87 km/s</li>
-                        <li><strong>Um ano:</strong> 88 dias </li>
-                        <li><strong>Um dia:</strong> 59 dias </li>
-                        <li><strong>Distancia do Sol:</strong> 57,9 milhões de km</li>
-                    </ul>             
+            <div class="planetsinfowrapper" id="earthinfo">
+                <div class="content-section3-planetsleft">
+                    <div class="content-section3-earth-basicinfo">
+                        <img id="planetInfoGlobe" class="content-section3-earth-image" src="IMG/Planets/3-Earth/EarthGlobe.png" alt="PlanetEarth">
+                        <ul class="planetsBasicInfo">
+                            <li>Tamanho: 12.756,2 Km</li>
+                            <li>Um ano: 365 dias </li>
+                            <li>Um dia: 24 horas </li>
+                            <li>Velocidade de translação: 107.000 km/h</li>
+                            <li>Velocidade de rotação: 1.574 km/h</li>
+                            <li>Distancia do Sol: 147.3 milhões km</li>
+                        </ul>
+                    </div>
+                    <div class="content-section3-planets-maininfo">
+                        <h1 class="content-section3-planets-maininfo-title">Terra, mãe de todos.</h1>
+                        <p class="content-section3-planets-maininfo-paragraph">
+                            Em inspiração a fertilidade do planeta terra, os gregos a batizaram de Gaia, mãe dos deuses gregos, e anos depois os romanos a batizaram de Terra,
+                             a geradora de todos os deuses romanos. O planeta Terra é um dos quatro planetas telúricos (de formação rochosa) do Sistema Solar, sendo os outro: 
+                             Mercúrio, Vênus e Marte. É o único planeta do Sistema Solar em que existe água em estado líquido, correspondendo a cerca de 70% da superfície do planeta.
+                             Sua atmosféra é composta de gases, sendo eles, principalmente: nitrogênio, hidrogênio e oxigênio.
+                        </p>
+                        <div class="bottom-options-wrapper">
+                            <div class="info-bottom-options-home">
+                                <h1><a href="#home" class="back-to-home">HOME</a></h1>
+                            </div>
+                            <span>-</span>
+                            <div class="info-bottom-options-menu">
+                                <h1><a href="#planets" class="back-to-menu">MENU</a></h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="content-cetion3-venus-maininfo">Informações sobre venus</p>
             </div>
 
-            <div class="content-section3-earth">
-                <img class="content-section3-earthbackground-image" src="" alt="PlanetEarthBackground">
-                <div class="content-section3-earth-basicinfo">
-                    <img id="planetInfoGlobe" class="content-section3-earth-image" src="IMG/Planets/3-Earth/EarthGlobe.png" alt="PlanetEarth">
-                    <ul class="planetsBasicInfo">
-                        <li><strong>Tamanho:</strong> 4878 km</li>
-                        <li><strong>Velocidade:</strong> aprox. 47,87 km/s</li>
-                        <li><strong>Um ano:</strong> 88 dias </li>
-                        <li><strong>Um dia:</strong> 59 dias </li>
-                        <li><strong>Distancia do Sol:</strong> 57,9 milhões de km</li>
-                    </ul>
+            <div class="planetsinfowrapper" id="marsinfo">
+                <div class="content-section3-planetsright">
+                    <div class="content-section3-mars-basicinfo">
+                        <img id="planetInfoGlobe" class="content-section3-mars-image" src="IMG/Planets/4-Mars/MarsGlobe.png" alt="PlanetMars">
+                        <ul class="planetsBasicInfo">
+                            <li>Tamanho: 6.779 km</li>
+                            <li>Um ano: 687 dias </li>
+                            <li>Um dia: 24h 37min </li>
+                            <li>Velocidade de translação: 24,07 km/s</li>
+                            <li>Velocidade de rotação: 866 km/h</li>
+                            <li>Distancia do Sol: 228 milhões de km.</li>
+                        </ul>
+                    </div>
+                    <div class="content-section3-planets-maininfo">
+                        <h1 class="content-section3-planets-maininfo-title">Marte, deus da guerra.</h1>
+                        <p class="content-section3-planets-maininfo-paragraph">
+                            Marte é o segundo menor planeta do sistema solar, sua aparencia vermelha deu-lhe o nome do deus romano da guerra, 
+                            Ares. Possui duas pequenas luas: Fobos e Deimos, ambos filho de Ares e Afrodite. Marte é muito frio, árido e rochoso, 
+                            sua temperatura máxima é de aproximadamente 25ºC, com uma média de -69ºC, podendo chegar até -140ºC a noite. Sua atmosfera é 
+                            muito fina e é composta essencialmente de gás carbônico, embora exista em menor quantidade o nitrogênio, oxigênio e outros gases.
+                        </p>
+                        <div class="bottom-options-wrapper">
+                            <div class="info-bottom-options-home">
+                                <h1><a href="#home" class="back-to-home">HOME</a></h1>
+                            </div>
+                            <span>-</span>
+                            <div class="info-bottom-options-menu">
+                                <h1><a href="#planets" class="back-to-menu">MENU</a></h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="content-cetion3-earth-maininfo">Informações sobre terra</p>
             </div>
 
-            <div class="content-section3-mars">
-                <img class="content-section3-marsbackground-image" src="" alt="PlanetMarsBackground">
-                <div class="content-section3-mars-basicinfo">
-                    <img id="planetInfoGlobe" class="content-section3-mars-image" src="IMG/Planets/4-Mars/MarsGlobe.png" alt="PlanetMars">
-                    <ul class="planetsBasicInfo">
-                        <li><strong>Tamanho:</strong> 4878 km</li>
-                        <li><strong>Velocidade:</strong> aprox. 47,87 km/s</li>
-                        <li><strong>Um ano:</strong> 88 dias </li>
-                        <li><strong>Um dia:</strong> 59 dias </li>
-                        <li><strong>Distancia do Sol:</strong> 57,9 milhões de km</li>
-                    </ul>
+            <div class="planetsinfowrapper" id="jupiterinfo">
+                <div class="content-section3-planetsleft">
+                    <div class="content-section3-jupiter-basicinfo">
+                        <img id="planetInfoGlobe" class="content-section3-jupiter-image" src="IMG/Planets/5-Jupiter/JupiterGlobe.png" alt="PlanetJupiter">
+                        <ul class="planetsBasicInfo">
+                            <li>Tamanho: 139,8 mil km</li>
+                            <li>Um ano: 12 anos </li>
+                            <li>Um dia: 9h56min </li>
+                            <li>Velocidade de translação: 13,1 km/s</li>
+                            <li>Velocidade de rotação: 45.583 km/h</li>
+                            <li>Distancia do Sol: 778 milhões de km</li>
+                        </ul>
+                    </div>
+                    <div class="content-section3-planets-maininfo">
+                        <h1 class="content-section3-planets-maininfo-title">Júpiter, o governante do olimpo</h1>
+                        <p class="content-section3-planets-maininfo-paragraph">
+                            Júpiter é o maior planeta do sistema solar, sendo maior do que todos os outros planetas do sistema 
+                            solar juntos. Foi batizado com esse nome em homenagem ao governante do Olimpo, Júpiter, o 
+                            deus dos deuses. Assim como Saturno, Jupiter também possui um sistema de anéis, porém, melhor brilhantes 
+                            e muito mais finos. Júpiter foi observado a primeira vez por Galileu Galilei, em 1610. 
+                            A atmosfera de Júpiter é composta principalmente por hidrogênio, hélio e traços de metano a uma temperatura de 
+                            103ºC, tendo alta pressão atmosférica. Ela também é dividida em diversas faixas, em várias latitudes, resultando em turbulência e tempestades. 
+                        </p>
+                        <div class="bottom-options-wrapper">
+                            <div class="info-bottom-options-home">
+                                <h1><a href="#home" class="back-to-home">HOME</a></h1>
+                            </div>
+                            <span>-</span>
+                            <div class="info-bottom-options-menu">
+                                <h1><a href="#planets" class="back-to-menu">MENU</a></h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="content-cetion3-mars-maininfo">Informações sobre marte</p>
             </div>
 
-            <div class="content-section3-jupiter">
-                <img class="content-section3-jupiterbackground-image"src="" alt="PlanetJupiterBackground">
-                <div class="content-section3-jupiter-basicinfo">
-                    <img id="planetInfoGlobe" class="content-section3-jupiter-image" src="IMG/Planets/5-Jupiter/JupiterGlobe.png" alt="PlanetJupiter">
-                    <ul class="planetsBasicInfo">
-                        <li><strong>Tamanho:</strong> 4878 km</li>
-                        <li><strong>Velocidade:</strong> aprox. 47,87 km/s</li>
-                        <li><strong>Um ano:</strong> 88 dias </li>
-                        <li><strong>Um dia:</strong> 59 dias </li>
-                        <li><strong>Distancia do Sol:</strong> 57,9 milhões de km</li>
-                    </ul>
+            <div class="planetsinfowrapper" id="saturninfo">
+                <div class="content-section3-planetsright">
+                    <div class="content-section3-saturn-basicinfo">
+                        <img id="planetInfoGlobe" class="content-section3-saturn-image" src="IMG/Planets/6-Saturn/SaturnGlobe.png" alt="PlanetSaturn">
+                        <ul class="planetsBasicInfo">
+                            <li>Tamanho: 119,3 mil km</li>
+                            <li>Um ano: 29 anos e 167 dias </li>
+                            <li>Um dia: 10 h 39 min </li>
+                            <li>Velocidade de translação: 34,7 km/h</li>
+                            <li>Velocidade de rotação: 36.849 km/h</li>
+                            <li>Distancia do Sol: 1.4 bilhão km</li>
+                        </ul>
+                    </div>
+                    <div class="content-section3-planets-maininfo">
+                        <h1 class="content-section3-planets-maininfo-title">Saturno, deus da riqueza e pai de Júpiter.</h1>
+                        <p class="content-section3-planets-maininfo-paragraph">
+                            Sendo o segundo maior do sistema solar, atrás apenas de Jupiter, <strong>Saturno</strong> é conhecido pelo complexo sistema de 7 anéis 
+                            formados principalmente por gelo, poeira cósmica, pedaços de cometas, asteroides e luas despedaçadas, 
+                            possuindo 53 luas conhecidas e outras nove em pesquisa. É um planeta gasoso, cuja temperatura na superficie 
+                            é de -125ºC. Foi descoberto por Galileu Galilei em 1610, que lhe deu o nome do deus romado da agricultura.  
+                            Saturno tem uma atmosfera espessa. A radiação ultravioleta do Sol provoca na atmosfera superior de Saturno uma 
+                            série de reações químicas que originam a denominada grande mancha branca. Esse fenômeno pode ser observado a 
+                            cada 30 anos da Terra.
+                        </p>
+                        <div class="bottom-options-wrapper">
+                            <div class="info-bottom-options-home">
+                                <h1><a href="#home" class="back-to-home">HOME</a></h1>
+                            </div>
+                            <span>-</span>
+                            <div class="info-bottom-options-menu">
+                                <h1><a href="#planets" class="back-to-menu">MENU</a></h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="content-cetion3-jupiter-maininfo">Informações sobre jupiter</p>
             </div>
 
-            <div class="content-section3-saturn">
-                <img class="content-section3-saturnbackground-image" src="" alt="PlanetSaturnBackground">
-                <div class="content-section3-saturn-basicinfo">
-                    <img id="planetInfoGlobe" class="content-section3-saturn-image" src="IMG/Planets/6-Saturn/SaturnGlobe.png" alt="PlanetSaturn">
-                    <ul class="planetsBasicInfo">
-                        <li><strong>Tamanho:</strong> 4878 km</li>
-                        <li><strong>Velocidade:</strong> aprox. 47,87 km/s</li>
-                        <li><strong>Um ano:</strong> 88 dias </li>
-                        <li><strong>Um dia:</strong> 59 dias </li>
-                        <li><strong>Distancia do Sol:</strong> 57,9 milhões de km</li>
-                    </ul>
+            <div class="planetsinfowrapper" id="uranusinfo">
+                <div class="content-section3-planetsleft">
+                    <div class="content-section3-uranus-basicinfo">
+                        <img id="planetInfoGlobe" class="content-section3-uranus-image" src="IMG/Planets/7-Uranus/UranusGlobe.png" alt="PlanetUranus">
+                        <ul class="planetsBasicInfo">
+                            <li>Tamanho: 50.724 km</li>
+                            <li>Um ano: 64 anos </li>
+                            <li>Um dia: 17h </li>
+                            <li>Velocidade de translação: 24,4 km/h</li>
+                            <li>Velocidade de rotação: 14.794 km/h</li>
+                            <li>Distancia do Sol: 2.9 bilhões km</li>
+                        </ul>
+                    </div>
+                    <div class="content-section3-planets-maininfo">
+                        <h1 class="content-section3-planets-maininfo-title">Urano, deus do céu.</h1>
+                        <p class="content-section3-planets-maininfo-paragraph">
+                            Terceiro maior planeta do sistema solar, sendo o 
+                            primeiro a ser encontrado por meio de um telescopio 
+                            pelo astronomo William Herschel em 1781. Assim
+                             como Vênus, Urano gira de leste a oeste. A sua 
+                             nomenclatura homenageia o deus Urano da mitologia 
+                             grega, que representava a personificação do céu.
+                             A atmosfera de Urano, como aquela dos gigantes 
+                             gasosos maiores Júpiter e Saturno, é composta 
+                             primariamente de hidrogênio, hélio e metano. A 
+                             atmosfera de Urano é a mais fria de todos os 
+                             planetas, alcançando a temperatura de -224ºC. O 
+                             metano na alta atmosfera absorve a luz vermelha, 
+                             dando a Urano a sua cor azul-esverdeada.
+                        </p>
+                        <div class="bottom-options-wrapper">
+                            <div class="info-bottom-options-home">
+                                <h1><a href="#home" class="back-to-home">HOME</a></h1>
+                            </div>
+                            <span>-</span>
+                            <div class="info-bottom-options-menu">
+                                <h1><a href="#planets" class="back-to-menu">MENU</a></h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="content-cetion3-saturn-maininfo">Informações sobre saturno</p>
             </div>
 
-            <div class="content-section3-uranus">
-                <img class="content-section3-uranusbackground-image" src="" alt="PlanetUranusBackground">
-                <div class="content-section3-uranus-basicinfo">
-                    <img id="planetInfoGlobe" class="content-section3-uranus-image" src="IMG/Planets/7-Uranus/UranusGlobe.png" alt="PlanetUranus">
-                    <ul class="planetsBasicInfo">
-                        <li><strong>Tamanho:</strong> 4878 km</li>
-                        <li><strong>Velocidade:</strong> aprox. 47,87 km/s</li>
-                        <li><strong>Um ano:</strong> 88 dias </li>
-                        <li><strong>Um dia:</strong> 59 dias </li>
-                        <li><strong>Distancia do Sol:</strong> 57,9 milhões de km</li>
-                    </ul>
+            <div class="planetsinfowrapper" id="neptuneinfo">
+                <div class="content-section3-planetsright">
+                    <div class="content-section3-neptune-basicinfo">
+                        <img id="planetInfoGlobe" class="content-section3-neptune-image" src="IMG/Planets/8-Neptune/NeptuneGlobe.png" alt="PlanetNeptune">
+                        <ul class="planetsBasicInfo">
+                            <li>Tamanho: 49.244 km</li>
+                            <li>Um ano: 156 anos </li>
+                            <li>Um dia: 16 horas </li>
+                            <li>Velocidade de translação: 19,5 km/h</li>
+                            <li>Velocidade de rotação: 9.719 km/h</li>
+                            <li>Distancia do Sol: 4,5 bilhões km</li>
+                        </ul>
+                    </div>
+                    <div class="content-section3-planets-maininfo">
+                        <h1 class="content-section3-planets-maininfo-title">Netuno, rei dos oceanos.</h1>
+                        <p class="content-section3-planets-maininfo-paragraph">
+                            Em função da cor azulada que o planeta exibe, seus descobridores 
+                            o nomearam como <strong>Netuno</strong>, deus romano dos oceanos.
+                            Foi descoberto em 1846 e recebeu o nome do deus romano do mar. Possui 
+                            13 luas. O planeta Netuno é composto, principalmente, de água muito 
+                            quente, amônia e metano em seu núcleo, que tem aproximadamente o 
+                            tamanho da Terra. A atmosfera é formada por hidrogênio, hélio e 
+                            metano, assim como os outros 3 gigantes gasosos. Assim como Urano, 
+                            a cor azulada brilhante de Netuno resulta da elevada quantidade de 
+                            metano na atmosfera. A temperatura média por lá é de 223 ºC negativos!
+                             Além de ter tempestades ciclônicas, que se formam em regiões com 
+                             pressão atmosférica baixas e temperaturas altas, em Netuno existem 
+                             ventos muito fortes que varrem de cima abaixo o planeta.
+                        </p>
+                        <div class="bottom-options-wrapper">
+                            <div class="info-bottom-options-home">
+                                <h1><a href="#home" class="back-to-home">HOME</a></h1>
+                            </div>
+                            <span>-</span>
+                            <div class="info-bottom-options-menu">
+                                <h1><a href="#planets" class="back-to-menu">MENU</a></h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="content-cetion3-uranus-maininfo">Informações sobre urano</p>
-            </div>
-
-            <div class="content-section3-neptune">
-                <img class="content-section3-neptunebackground-image" src="" alt="PlanetNeptuneBackground">
-                <div class="content-section3-neptune-basicinfo">
-                    <img id="planetInfoGlobe" class="content-section3-neptune-image" src="IMG/Planets/8-Neptune/NeptuneGlobe.png" alt="PlanetNeptune">
-                    <ul class="planetsBasicInfo">
-                        <li><strong>Tamanho:</strong> 4878 km</li>
-                        <li><strong>Velocidade:</strong> aprox. 47,87 km/s</li>
-                        <li><strong>Um ano:</strong> 88 dias </li>
-                        <li><strong>Um dia:</strong> 59 dias </li>
-                        <li><strong>Distancia do Sol:</strong> 57,9 milhões de km</li>
-                    </ul>
-                </div>
-                <p class="content-cetion3-neptune-maininfo">Informações sobre netuno</p>
             </div>
 
         </section>
     </main>
 
     <footer class="bottomfooter">
-        <img class="bottomfooter-logo" src="IMG/Logos/PageLogo/GrayLogo.png" alt="BottomLeftFooterLogo">
+        <a href="#home" class="returnhomelink"><img class="bottomfooter-logo" src="IMG/Logos/PageLogo/GrayLogo.png" alt="BottomLeftFooterLogo"></a>
 
         <div class="bottomfooter-info">
             <a class="bottomfooter-creator" href="https://github.com/Khezac" target="_blank">@Khezac</a>
