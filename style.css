@@ -365,3 +365,64 @@ input:checked + label .description {
     height: 47px;
 }
 /* FOOTER */
+
+/* MOBILE */
+#topheader-mobile-menu{
+    display: none;
+}
+
+/* MOBILE FRIENDLY MEDIA QUERIE BREAKPOINT*/
+@media (max-width:480px){
+
+    /*Section 1 wrapper*/
+#backgrounder{ /* section 1 mobile background */
+    background-image: linear-gradient(black 1%,rgba(255, 255, 255, 0)99%),url(IMG/Mobile_Media/Backgrounds/Section1MobileBackground.jpg);
+    background-size: 100%;
+    width: 375px;
+}
+    /*Section 1 wrapper*/
+
+    /*FRONTPAGE HEADER*/
+.topheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+}
+
+.topheader-logo{
+    width: 20%;
+}
+
+.topheader-menu{
+    display:none;
+}
+
+/* .topheader-menu-item{
+    font-family: 'Righteous', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(218, 227, 235);
+}
+
+.topheader-menu-item:hover, .topheader-socialmedia-logo:hover{
+    opacity:0.8;
+} */
+
+#topheader-mobile-menu{
+    display:flex;
+}
+
+.topheader-socialmedia{
+    display:none;
+}
+
+.topheader-socialmedia-logo{
+    width:25%;
+}
+    /*FRONTPAGE HEADER*/
+
+    /*SECTION 1 FRONTPAGE*/
+    /*SECTION 1 FRONTPAGE*/
+}
