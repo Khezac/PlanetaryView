@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
-
+/* smooth scroll */
 html {
     scroll-behavior: smooth;
 }
-
+/*CSS reset*/
 *{
     padding:0;
     margin:0;
@@ -55,16 +55,6 @@ body{
 
 .topheader-socialmedia-logo{
     width:25%;
-}
-
-.topheader-menu{
-    display:flex;
-    flex-direction: row;
-    gap: 100px;
-}
-
-.topheader-menu-item:hover, .topheader-socialmedia-logo:hover{
-    opacity:0.8;
 }
 
 /* HEADER */
