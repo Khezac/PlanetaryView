@@ -252,7 +252,7 @@ input:checked + label .description {
 }
 /* CARDS */
 
-/* INFO SECTION */
+/* INFO SECTION (section 3) */
 #planetInfoGlobe{
     max-width: 300px;
 }
@@ -267,7 +267,7 @@ input:checked + label .description {
 }
 
 .planetsinfowrapper{
-    min-width:1280px;
+    min-width:1200px;
     min-height: 650px;
 }
 
