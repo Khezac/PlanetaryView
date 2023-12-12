@@ -16,12 +16,12 @@ body{
 }
 
 /* HEADER */
-#backgrounder{ /* section 1 background */
+#headerwrapper{ /* section 1 background */
     background-image: linear-gradient(black 1%,rgba(255, 255, 255, 0)99%),url(IMG/Backgrounds/Section1Background.jpg);
     background-size: 100%;
 }
 
-.topheader{
+.header{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,31 +29,31 @@ body{
     padding:24px;
 }
 
-.topheader-logo{
+.header-logo{
     width: 9%;
 }
 
-.topheader-menu{
+.header-menu{
     display:flex;
     flex-direction: row;
     gap: 100px;
 }
 
-.topheader-menu-item{
+.header-menu-item{
     font-family: 'Righteous', sans-serif;
-    font-weight: 400;
+    font-size: 22px;
     color: rgb(218, 227, 235);
 }
 
-.topheader-menu-item:hover, .topheader-socialmedia-logo:hover{
-    opacity:0.8;
+.header-menu-item:hover, .header-socialmedia-logo:hover{
+    opacity:0.7;
 }
 
-.topheader-socialmedia{
+.header-socialmedia{
     width:10%
 }
 
-.topheader-socialmedia-logo{
+.header-socialmedia-logo{
     width:25%;
 }
 
@@ -64,7 +64,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;    
-    margin-left:9em;
+    justify-content: center;
     min-height: 85vh;
 }
 
@@ -75,7 +75,6 @@ body{
 
 .content-section1-presentation{
     width: 80ch;
-    margin-bottom:5rem;
 }
 
 .content-section1-presentation-title{
@@ -96,41 +95,37 @@ body{
 }
 
 .content-section1-button {
-  align-items: center;
-  background-image: linear-gradient(144deg,#40ffc6, #4254f3 50%,#0037eb);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  min-width: 140px;
-  padding: 19px 24px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-  opacity:0.5;
-  max-width: 100%;
-  transition: 150ms;
+    background-image: linear-gradient(144deg,#40ffc6, #4254f3 50%,#0037eb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    line-height: 1em;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    opacity:0.5;
+    max-width: 100%;
+    transition: 150ms;
 }
 
 .content-section1-button:hover {
-  opacity:1.0;
+  opacity: 1.0;
 }
 /* TOP PAGE SECTION1 */
 
 /* CARDS */
-.content-section2-planetscards{
-    background-image: url(https://i.ebayimg.com/images/g/ZdUAAOSwanBk8m6h/s-l1200.webp);
-    background-size: 100%;
-}
 
 .cardswrapper{
     width:100%;
@@ -138,6 +133,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(https://i.ebayimg.com/images/g/ZdUAAOSwanBk8m6h/s-l1200.webp);
+    background-size: 100%;
 }
 
 .container{
@@ -240,6 +237,15 @@ input:checked + label .description {
 .card[for='neptune'] {
     background-image: url(IMG/Planets/8-Neptune/NeptuneBackground.jpg);
 }
+
+.scrollpagelink{
+    font-family: 'Sarala', sans-serif;
+    color:white;
+}
+
+.scrollpagelink:hover{
+    opacity:0.5;
+}
 /* CARDS */
 
 /* INFO SECTION (section 3) */
@@ -264,6 +270,7 @@ input:checked + label .description {
 .planetsBasicInfo {
     margin-left: 5%;
     font-family: 'Righteous', sans-serif;
+    font-size: 20px;
     width: 35ch;
 }
 
@@ -298,6 +305,7 @@ input:checked + label .description {
 
 .content-section3-planets-maininfo-paragraph{
     font-family: 'Sarala', sans-serif;
+    font-size: 24px;
 }
 
 .bottom-options-wrapper{
@@ -326,6 +334,11 @@ input:checked + label .description {
     align-items: center;
     justify-content: space-around;
     padding:24px;
+}
+
+.returnhomelink{
+    width: 95px;
+    height: 47px;
 }
 
 .bottomfooter-logo{
@@ -359,70 +372,4 @@ input:checked + label .description {
 .bottomfooter-socialmedia-logo:hover{
     opacity:0.6;
 }
-
-.returnhomelink{
-    width: 95px;
-    height: 47px;
-}
 /* FOOTER */
-
-/* MOBILE */
-#topheader-mobile-menu{
-    display: none;
-}
-
-/* MOBILE FRIENDLY MEDIA QUERIE BREAKPOINT*/
-@media (max-width:480px){
-
-    /*Section 1 wrapper*/
-#backgrounder{ /* section 1 mobile background */
-    background-image: linear-gradient(black 1%,rgba(255, 255, 255, 0)99%),url(IMG/Mobile_Media/Backgrounds/Section1MobileBackground.jpg);
-    background-size: 100%;
-    width: 375px;
-}
-    /*Section 1 wrapper*/
-
-    /*FRONTPAGE HEADER*/
-.topheader{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding:20px;
-}
-
-.topheader-logo{
-    width: 20%;
-}
-
-.topheader-menu{
-    display:none;
-}
-
-/* .topheader-menu-item{
-    font-family: 'Righteous', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    color: rgb(218, 227, 235);
-}
-
-.topheader-menu-item:hover, .topheader-socialmedia-logo:hover{
-    opacity:0.8;
-} */
-
-#topheader-mobile-menu{
-    display:flex;
-}
-
-.topheader-socialmedia{
-    display:none;
-}
-
-.topheader-socialmedia-logo{
-    width:25%;
-}
-    /*FRONTPAGE HEADER*/
-
-    /*SECTION 1 FRONTPAGE*/
-    /*SECTION 1 FRONTPAGE*/
-}
