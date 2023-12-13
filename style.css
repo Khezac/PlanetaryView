@@ -16,7 +16,7 @@ body{
 }
 
 /* HEADER */
-#headerwrapper{ /* section 1 background */
+#frontpage{ /* section 1 background */
     background-image: linear-gradient(black 1%,rgba(255, 255, 255, 0)99%),url(IMG/Backgrounds/Section1Background.jpg);
     background-size: 100%;
 }
