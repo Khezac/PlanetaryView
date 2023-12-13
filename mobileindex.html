@@ -7,19 +7,31 @@
     <link rel="stylesheet" href="mobilestyle.css">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <div id="headerwrapper">
+        <header id="home" class="mobile-header">
             <img src="IMG/Logos/PageLogo/GradientLogo.png" alt="header-logo" class="header-logo">
-            <img src="IMG/Mobile_Media/MenuNav/MenuNav-Icon.jpg" alt="header-menu-button" class="header-menu-button">
-
-            <div id="header-menu-optionswrapper">
-                <ul class="header-menu-options">
-                    <li><a href="#cardswrapper" class="header-menu-item">Planets</a></li>
+            
+            <div id="header-menu-optionswrapper" onclick="toggleMobileMenu(this)">
+                <img src="IMG/Mobile_Media/MenuNav/MenuNav-Icon.jpg" alt="header-menu-button" class="header-menu-button">
+                <ul class="header-menu">
+                    <div class="header-socialmedia">
+                        <a class="header-socialmedia-logo" href="https://github.com/Khezac/" target="_blank">
+                            <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/GitHubLogo.png" loading="lazy" alt="TopRightHeaderGitHubLogo">
+                        </a>
+                        <a class="header-socialmedia-logo" href="https://www.instagram.com/zac.mntr/" target="_blank">
+                            <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/InstagramLogo.png" loading="lazy" alt="TopRightHeaderInstagramLogo">
+                        </a>
+                        <a class="header-socialmedia-logo" href="https://twitter.com/khezac" target="_blank">
+                            <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/XLogo.png" loading="lazy" alt="TopRightHeaderTwitterLogo">
+                        </a>
+                    </div>
+                    <li><a class="header-menu-item" href="#cardswrapper" >Planets</a></li>
                     <li><a class="header-menu-item" href="https://github.com/Khezac/PlanetaryView" target="_blank">Open Source</a></li>
-                    <li><a href="https://github.com/Khezac/PlanetaryView/blob/main/README.md" class="header-menu-item" target="_blank">About</a></li>
+                    <li><a class="header-menu-item" href="https://github.com/Khezac/PlanetaryView/blob/main/README.md" target="_blank">About</a></li>
                 </ul>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
+    <script src="mobilescript.js"></script>
 </body>
 </html>

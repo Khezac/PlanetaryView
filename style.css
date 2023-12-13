@@ -373,3 +373,16 @@ input:checked + label .description {
     opacity:0.6;
 }
 /* FOOTER */
+
+/* SET INVISIBLE MOBILE */
+/* SET INVISIBLE MOBILE */
+
+/* MOBILE MEDIA QUERIE */
+@media (max-width:768px){
+    header{
+        position: sticky;
+    }
+
+
+}
+/* MOBILE MEDIA QUERIE */
