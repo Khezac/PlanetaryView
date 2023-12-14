@@ -41,7 +41,7 @@ body{
 
 .header-menu-item{
     font-family: 'Righteous', sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     color: rgb(218, 227, 235);
 }
 
@@ -133,7 +133,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://i.ebayimg.com/images/g/ZdUAAOSwanBk8m6h/s-l1200.webp);
+    background-image: url(IMG/Backgrounds/CardsBackground.jpg);
     background-size: 100%;
 }
 
@@ -264,13 +264,13 @@ input:checked + label .description {
 
 .planetsinfowrapper{
     min-width:1200px;
-    min-height: 650px;
+    min-height: 600px;
 }
 
 .planetsBasicInfo {
     margin-left: 5%;
     font-family: 'Righteous', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     width: 35ch;
 }
 
@@ -305,7 +305,7 @@ input:checked + label .description {
 
 .content-section3-planets-maininfo-paragraph{
     font-family: 'Sarala', sans-serif;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .bottom-options-wrapper{
