@@ -1,0 +1,262 @@
+/* CSS RESET */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    height:2000px;
+}
+
+@media (max-width:768px) {
+/* TAMANHO DAS IMGS */
+#frontpage{
+    background-image: linear-gradient(black 1%,rgba(255, 255, 255, 0)99%),url(IMG/Mobile_Media/Backgrounds/Section1MobileBackground.jpg);
+    background-size: 100%;
+}
+
+.mobile-header-logo{
+    width:100px;
+    height:70px;
+    padding:20px;
+}
+
+.mobile-header-menu-button-icon{
+    width:70px;
+    height:70px;
+    padding:20px;
+}
+
+.header-socialmedia-logo{
+    width:30px;
+    height:30px;
+}
+
+.content-section1-logo{
+    width:100px;
+    height:100px;
+}
+
+.content-section1-presentation-title{
+    width:170px;
+    height:70px;
+}
+
+/* /TAMANHO DAS IMGS */
+
+/* MOBILE HEADER */
+.header-wrapper{
+    display:unset;
+}
+.mobile-header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+}
+/* /MOBILE HEADER */
+
+/* MOBILE HEADER MENU OPTIONS (top elements)*/
+#mobile-header-menu-wrapper{
+    display:flex;
+    flex-direction: row;
+}
+#mobile-header-menu-wrapper .open > .mobile-header-menu-button-icon{
+    display:flex;
+    flex-direction: row;
+    margin-right:50px;
+}
+
+.mobile-header-menu-options-wrapper{
+    display:none;
+    position:absolute;
+    z-index: 1;
+}
+
+.open .mobile-header-menu-options-wrapper{
+    display:flex;
+    position:sticky;
+    z-index: 1;
+    justify-content: center;
+    height:657px;
+    width:123px;
+    background-color: rgb(46,46,46,46);
+}
+
+.mobile-header-socialmedia{
+    margin-top:20px;
+}
+
+.mobile-header-menu-items, .mobile-header-menu-options{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+
+.header-menu-item{
+    font-family:'Righteous', sans-serif;
+    font-size:px;
+    color:white;
+}
+/* /MOBILE HEADER MENU OPTIONS*/
+
+/* FRONT PAGE SECTION 1 */
+.frontpage-section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width:768px;
+    height: 657px;
+    gap:70px;
+}
+
+.frontpage-section1-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-section1-presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40ch;
+    font-size: 12px;
+}
+
+.content-section1-caption1{
+    font-family: 'Sarala', sans-serif;
+}
+
+.content-section1-caption2{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 200;
+}
+
+.content-section1-button {
+    background-image: linear-gradient(144deg,#40ffc6, #4254f3 50%,#0037eb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    line-height: 1em;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    opacity:1;
+    max-width: 100%;
+}
+/* /FRONT PAGE SECTION 1 */
+
+/* SECTION 2 PLANETS CARDS */
+
+#cardswrapper{
+    background-image: url(IMG/Mobile_Media/Backgrounds/CardsBackground.jpg);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:20px;
+    gap:15px;
+}
+
+.card-texts{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap:6px;
+    font-size: 12px;
+}
+
+.card-texts>h4{
+    font-family:'Righteous', sans-serif;
+    font-weight: 700;
+    color:rgb(53, 56, 255);
+}
+
+.card-texts>p{
+    font-family:'Sarala', sans-serif;
+    color:rgb(102, 185, 253);
+}
+
+.linkto-planet{
+    width:100%;
+    min-width:280px;
+    height:100%;
+    min-height: 80px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mercury-card{
+    background-image: url("IMG/Planets/1-Mercury/MercuryBackground.jpg");
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.venus-card{
+    background-image: url(IMG/Planets/2-Venus/VenusBackground.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.earth-card{
+    background-image: url(IMG/Planets/3-Earth/EarthBackground.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.mars-card{
+    background-image: url(IMG/Planets/4-Mars/MarsBackground.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.jupiter-card{
+    background-image: url(IMG/Planets/5-Jupiter/JupiterBackground.png);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.saturn-card{
+    background-image: url(IMG/Planets/6-Saturn/SaturnBackground.png);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.uranus-card{
+    background-image: url(IMG/Planets/7-Uranus/UranusBackground.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.neptune-card{
+    background-image: url(IMG/Planets/8-Neptune/NeptuneBackground.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+/* /SECTION 2 PLANETS CARDS */
+}
