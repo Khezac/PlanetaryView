@@ -14,14 +14,28 @@ html {
 body{
     font-size: 100%;
 }
+/* HIDE MOBILE TAGS */
 
+.mobile-header{
+    display:none;
+}
+
+.frontpage-section1{
+    display:none;
+}
+
+.content-section2-planetscards{
+    display:none;
+}
+
+/* HIDE MOBILE TAGS */
 /* HEADER */
 #frontpage{ /* section 1 background */
     background-image: linear-gradient(black 1%,rgba(255, 255, 255, 0)99%),url(IMG/Backgrounds/Section1Background.jpg);
     background-size: 100%;
 }
 
-.header{
+.desktop-header{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -374,15 +388,285 @@ input:checked + label .description {
 }
 /* FOOTER */
 
-/* SET INVISIBLE MOBILE */
-/* SET INVISIBLE MOBILE */
-
 /* MOBILE MEDIA QUERIE */
 @media (max-width:768px){
-    header{
-        position: sticky;
-    }
 
+/* HIDE DESKTOP HEADER */
+.desktop-header{
+    display:none;
+    position:absolute;
+}
+
+.content-section1{
+    display:none;
+    position:absolute;
+}
+
+#cardswrapper{
+    display:none;
+    position:absolute;
+}
+/* HIDE DESKTOP HEADER */
+
+    /* TAMANHO DAS IMGS */
+#frontpage{
+    background-image: linear-gradient(black 1%,rgba(255, 255, 255, 0)99%),url(IMG/Mobile_Media/Backgrounds/Section1MobileBackground.jpg);
+    background-size: 100%;
+}
+
+.mobile-header-logo{
+    width:100px;
+    height:70px;
+    padding:20px;
+}
+
+.mobile-header-menu-button-icon{
+    width:70px;
+    height:70px;
+    padding:20px;
+}
+
+.header-socialmedia-logo{
+    width:30px;
+    height:30px;
+}
+
+.content-section1-logo{
+    width:100px;
+    height:100px;
+    margin:0;
+}
+
+.content-section1-presentation-title{
+    width:170px;
+    height:70px;
+    margin:0;
+}
+
+    /* /TAMANHO DAS IMGS */
+
+    /* MOBILE HEADER */
+.header-wrapper{
+    display: unset;
+}
+
+.mobile-header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+}
+/* /MOBILE HEADER */
+
+/* MOBILE HEADER MENU OPTIONS (top elements)*/
+#mobile-header-menu-wrapper{
+    display:flex;
+    flex-direction: row;
+}
+#mobile-header-menu-wrapper .open > .mobile-header-menu-button-icon{
+    display:flex;
+    flex-direction: row;
+    margin-right:50px;
+}
+
+.mobile-header-menu-options-wrapper{
+    display:none;
+    position:absolute;
+    z-index: 1;
+}
+
+.open .mobile-header-menu-options-wrapper{
+    display:flex;
+    position:sticky;
+    z-index: 1;
+    justify-content: center;
+    height:657px;
+    width:123px;
+    background-color: rgb(46,46,46,46);
+}
+
+.mobile-header-socialmedia{
+    margin-top:20px;
+}
+
+.mobile-header-menu-items, .mobile-header-menu-options{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+
+.header-menu-item{
+    font-family:'Righteous', sans-serif;
+    color:white;
+}
+/* /MOBILE HEADER MENU OPTIONS*/
+
+/* FRONT PAGE SECTION 1 */
+.frontpage-section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width:768px;
+    height: 657px;
+    gap:70px;
+}
+
+.frontpage-section1-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-section1-presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40ch;
+    font-size: 12px;
+}
+
+.content-section1-caption1{
+    font-family: 'Sarala', sans-serif;
+}
+
+.content-section1-caption2{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 200;
+}
+
+.content-section1-button {
+    background-image: linear-gradient(144deg,#40ffc6, #4254f3 50%,#0037eb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    line-height: 1em;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    opacity:1;
+    max-width: 100%;
+}
+/* /FRONT PAGE SECTION 1 */
+
+/* MOBILE INFO SECTION 3 */
+#planetInfoGlobe{
+    width: 100px;
+}
+
+.content-section3-planetsinfo{
+    display: flex;
+    gap:30px;
+}
+
+.planetsinfowrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:320px;
+    height: 657px;
+    max-height: 657px;;
+}
+
+.content-section3-planetsleft, .content-section3-planetsright{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width:320px;
+    margin: 0px;
+    padding:2%;
+}
+
+.content-section3-mercury-basicinfo{
+    display: flex;
+    flex-direction: row;
+    max-width:100%;
+    max-height: 60%;
+}
+.content-section3-venus-basicinfo{
+    display: flex;
+    flex-direction: row;
+    max-width:100%;
+    max-height: 60%;
+}
+.content-section3-earth-basicinfo{
+    display: flex;
+    flex-direction: row;
+    max-width:100%;
+    max-height: 60%;
+}
+.content-section3-mars-basicinfo{
+    display: flex;
+    flex-direction: row;
+    max-width:100%;
+    max-height: 60%;
+}
+.content-section3-jupiter-basicinfo{
+    display: flex;
+    flex-direction: row;
+    max-width:100%;
+    max-height: 60%;
+}
+.content-section3-saturn-basicinfo{
+    display: flex;
+    flex-direction: row;
+    max-width:100%;
+    max-height: 60%;
+}
+.content-section3-uranus-basicinfo{
+    display: flex;
+    flex-direction: row;
+    max-width:100%;
+    max-height: 60%;
+}
+.content-section3-neptune-basicinfo{
+    display: flex;
+    flex-direction: row;
+    max-width:100%;
+    max-height: 60%;
+}
+
+.planetsBasicInfo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 11px;
+    width: 30ch;
+}
+
+.content-section3-planets-maininfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.content-section3-planets-maininfo-title{
+    font-family: 'Righteous', sans-serif;
+    font-size: 20px;
+}
+
+.content-section3-planets-maininfo-paragraph{
+    font-family: 'Sarala', sans-serif;
+    font-size: 14px;
+}
+
+#neptuneinfo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 }
 /* MOBILE MEDIA QUERIE */

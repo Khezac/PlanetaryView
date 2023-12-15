@@ -9,23 +9,52 @@
 </head>
 <body>
     <div id="frontpage">
-        <header id="home" class="header">
-            <img class="header-logo" src="IMG/Logos/PageLogo/GradientLogo.png" alt="TopLeftHeaderLogo" loading="lazy">
-            <nav class="header-menu">
-                <a href="#cardswrapper" class="header-menu-item">Planets</a>
-                <a class="header-menu-item" href="https://github.com/Khezac/PlanetaryView" target="_blank">Open Source</a>
-                <a href="https://github.com/Khezac/PlanetaryView/blob/main/README.md" class="header-menu-item" target="_blank">About</a>
-            </nav>
-            <div class="header-socialmedia">
-                <a class="header-socialmedia-logo" href="https://github.com/Khezac/" target="_blank">
-                    <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/GitHubLogo.png" loading="lazy" alt="TopRightHeaderGitHubLogo">
-                </a>
-                <a class="header-socialmedia-logo" href="https://www.instagram.com/zac.mntr/" target="_blank">
-                    <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/InstagramLogo.png" loading="lazy" alt="TopRightHeaderInstagramLogo">
-                </a>
-                <a class="header-socialmedia-logo" href="https://twitter.com/khezac" target="_blank">
-                    <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/XLogo.png" loading="lazy" alt="TopRightHeaderTwitterLogo">
-                </a>
+        <header class="header-wrapper">
+            <div id="home" class="desktop-header">
+                <img class="header-logo" src="IMG/Logos/PageLogo/GradientLogo.png" alt="TopLeftHeaderLogo" loading="lazy">
+                <nav class="header-menu">
+                    <a href="#cardswrapper" class="header-menu-item">Planets</a>
+                    <a href="https://github.com/Khezac/PlanetaryView" class="header-menu-item" target="_blank">Open Source</a>
+                    <a href="https://github.com/Khezac/PlanetaryView/blob/main/README.md" class="header-menu-item" target="_blank">About</a>
+                </nav>
+                <div class="header-socialmedia">
+                    <a class="header-socialmedia-logo" href="https://github.com/Khezac/" target="_blank">
+                        <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/GitHubLogo.png" loading="lazy" alt="TopRightHeaderGitHubLogo">
+                    </a>
+                    <a class="header-socialmedia-logo" href="https://www.instagram.com/zac.mntr/" target="_blank">
+                        <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/InstagramLogo.png" loading="lazy" alt="TopRightHeaderInstagramLogo">
+                    </a>
+                    <a class="header-socialmedia-logo" href="https://twitter.com/khezac" target="_blank">
+                        <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/XLogo.png" loading="lazy" alt="TopRightHeaderTwitterLogo">
+                    </a>   
+                </div>
+            </div>
+
+            <div id="home" class="mobile-header">
+                <img src="IMG/Logos/PageLogo/GradientLogo.png" alt="header-logo" class="mobile-header-logo">
+                <div id="mobile-header-menu-wrapper" onclick="toggleMobileMenu(this)">
+                    <img src="IMG/Mobile_Media/MenuNav/MenuNav-Icon.jpg" alt="mobile-header-menu-button" class="mobile-header-menu-button-icon">
+                    <div class="mobile-header-menu-options-wrapper" onclick="toggleMobileMenu(this)">
+                        <div class="mobile-header-menu-options">
+                            <div class="mobile-header-socialmedia">
+                                <a class="header-socialmedia-logo" href="https://github.com/Khezac/" target="_blank">
+                                    <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/GitHubLogo.png" loading="lazy" alt="TopRightHeaderGitHubLogo">
+                                </a>
+                                <a class="header-socialmedia-logo" href="https://www.instagram.com/zac.mntr/" target="_blank">
+                                    <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/InstagramLogo.png" loading="lazy" alt="TopRightHeaderInstagramLogo">
+                                </a>
+                                <a class="header-socialmedia-logo" href="https://twitter.com/khezac" target="_blank">
+                                    <img class="header-socialmedia-logo" src="IMG/Logos/SocialMediaLogo/XLogo.png" loading="lazy" alt="TopRightHeaderTwitterLogo">
+                                </a>
+                            </div>
+                            <div class="mobile-header-menu-items">
+                            <a class="header-menu-item" href="#cardswrapper" >Planets</a>
+                            <a class="header-menu-item" href="https://github.com/Khezac/PlanetaryView" target="_blank">Open Source</a>
+                            <a class="header-menu-item" href="https://github.com/Khezac/PlanetaryView/blob/main/README.md" target="_blank">About</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -34,6 +63,19 @@
 
             <div class="content-section1-presentation">
                 <img class="content-section1-presentation-title" src="IMG/Logos/PageLogo/Section1MainTitleBlue.png" loading="lazy" alt="Section1Title"/>
+                <h2 class="content-section1-caption1">Olá! Seja bem-vindo(a) ao Planetary View!!!</h2><br>
+                <h2 class="content-section1-caption2">Aqui você pode aprender sobre os planetas do nosso incrível sistema solar.</h2>
+                <a href="#cardswrapper" class="scrollpagelink-toplanets"><button class="content-section1-button">Ver mais...</button></a>
+            </div>
+        </section>
+
+        <section class="frontpage-section1">
+            <div class="frontpage-section1-title">
+                <img class="content-section1-logo" src="IMG/Logos/PageLogo/BlueGlobeLogo.png" loading="lazy" alt="BlueGlobeSection1"/>
+                <img class="content-section1-presentation-title" src="IMG/Logos/PageLogo/Section1MainTitleBlue.png" loading="lazy" alt="Section1Title"/>
+            </div>
+
+            <div class="content-section1-presentation">
                 <h2 class="content-section1-caption1">Olá! Seja bem-vindo(a) ao Planetary View!!!</h2><br>
                 <h2 class="content-section1-caption2">Aqui você pode aprender sobre os planetas do nosso incrível sistema solar.</h2>
                 <a href="#cardswrapper" class="scrollpagelink-toplanets"><button class="content-section1-button">Ver mais...</button></a>
