@@ -793,6 +793,7 @@ input:checked + label .description {
 }
 
 .bottomfooter-socialmedia{
+    max-width: 120px;
     width:20%;
     margin:10px;
 }
