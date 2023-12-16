@@ -9,8 +9,8 @@
 </head>
 <body>
     <div id="frontpage">
-        <header class="header-wrapper">
-            <div id="home" class="desktop-header">
+        <header id="home" class="header-wrapper">
+            <div class="desktop-header">
                 <img class="header-logo" src="IMG/Logos/PageLogo/GradientLogo.png" alt="TopLeftHeaderLogo" loading="lazy">
                 <nav class="header-menu">
                     <a href="#cardswrapper" class="header-menu-item">Planets</a>
@@ -30,7 +30,7 @@
                 </div>
             </div>
 
-            <div id="home" class="mobile-header">
+            <div class="mobile-header">
                 <img src="IMG/Logos/PageLogo/GradientLogo.png" alt="header-logo" class="mobile-header-logo">
                 <div id="mobile-header-menu-wrapper" onclick="toggleMobileMenu(this)">
                     <img src="IMG/Mobile_Media/MenuNav/MenuNav-Icon.jpg" alt="mobile-header-menu-button" class="mobile-header-menu-button-icon">
@@ -84,6 +84,8 @@
     </div>
 
     <main class="content">
+            
+        <section class="content-section2-planetscards">
             <div id="cardswrapper" class="cardswrapper" alt="planetscardswrapper">
                 <div class="container">
                     <input type="radio" name="slide" id="mercury">
@@ -176,6 +178,83 @@
 
                 </div>
             </div>
+
+            <div id="mobilecardswrapper" class="mobilecardswrapper" alt="planetscardswrapper">
+                <div class="container">
+                    <div class="mercury-card" id="cards-format">
+                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                            <div class="card-texts">
+                                <h4>Mercúrio</h4>
+                                <p>O mais veloz mensageiro.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="venus-card" id="cards-format">
+                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                            <div class="card-texts">
+                                <h4>Vênus</h4>
+                                <p>Terceiro corpo celeste mais brilhante do céu.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="earth-card" id="cards-format">
+                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                            <div class="card-texts">
+                                <h4>Terra</h4>
+                                <p>Grandioso planeta água.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="mars-card" id="cards-format">
+                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                            <div class="card-texts">
+                                <h4>Marte</h4>
+                                <p>O mais violento entre os planetas.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="jupiter-card" id="cards-format">
+                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                            <div class="card-texts">
+                                <h4>Jupiter</h4>
+                                <p>Pai romano de Marte.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="saturn-card" id="cards-format">
+                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                            <div class="card-texts">
+                                <h4>Saturno</h4>
+                                <p>Gigante gasoso pai de júpiter.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="uranus-card" id="cards-format">
+                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                            <div class="card-texts">
+                                <h4>Urano</h4>
+                                <p>Filho de gaia, personificação do céu.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="neptune-card" id="cards-format">
+                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                            <div class="card-texts">
+                                <h4>Netuno</h4>
+                                <p>O rei dos oceanos.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="content-section3-planetsinfo">
             <div class="planetsinfowrapper" id="mercuryinfo">
@@ -465,6 +544,7 @@
                     </div>
                 </div>
             </div>
+        </section>
     </main>
 
     <footer class="bottomfooter">

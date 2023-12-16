@@ -24,7 +24,7 @@ body{
     display:none;
 }
 
-.content-section2-planetscards{
+#mobilecardswrapper{
     display:none;
 }
 
@@ -502,7 +502,7 @@ input:checked + label .description {
 }
 /* /MOBILE HEADER MENU OPTIONS*/
 
-/* FRONT PAGE SECTION 1 */
+/* MOBILE FRONT PAGE SECTION 1 */
 .frontpage-section1{
     display: flex;
     flex-direction: column;
@@ -530,6 +530,7 @@ input:checked + label .description {
 
 .content-section1-caption1{
     font-family: 'Sarala', sans-serif;
+    margin-left: 0px;
 }
 
 .content-section1-caption2{
@@ -561,7 +562,105 @@ input:checked + label .description {
     opacity:1;
     max-width: 100%;
 }
-/* /FRONT PAGE SECTION 1 */
+/* /MOBILE FRONT PAGE SECTION 1 */
+
+/* MOBILE SECTION 2 PLANETS CARDS */
+
+#mobilecardswrapper{
+    background-image: url(IMG/Mobile_Media/Backgrounds/CardsBackground.jpg);
+    display: block;
+    min-height: 785px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:20px;
+    gap:15px;
+}
+
+.card-texts{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap:6px;
+    font-size: 12px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.card-texts>h4{
+    font-family:'Righteous', sans-serif;
+    font-weight: 700;
+    color:rgb(255, 255, 255) !important;
+}
+
+.card-texts>p{
+    font-family:'Sarala', sans-serif;
+    color:rgb(255, 255, 255) !important;
+}
+
+.linkto-planet{
+    width:100%;
+    min-width:280px;
+    height:100%;
+    min-height: 80px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mercury-card{
+    background-image: url("IMG/Planets/1-Mercury/MercuryBackground.jpg");
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.venus-card{
+    background-image: url(IMG/Planets/2-Venus/VenusBackground.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.earth-card{
+    background-image: url(IMG/Planets/3-Earth/EarthBackground.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.mars-card{
+    background-image: url(IMG/Planets/4-Mars/MarsBackground.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.jupiter-card{
+    background-image: url(IMG/Planets/5-Jupiter/JupiterBackground.png);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.saturn-card{
+    background-image: url(IMG/Planets/6-Saturn/SaturnBackground.png);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.uranus-card{
+    background-image: url(IMG/Planets/7-Uranus/UranusBackground.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+.neptune-card{
+    background-image: url(IMG/Planets/8-Neptune/NeptuneBackground.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+}
+
+/* /MOBILE SECTION 2 PLANETS CARDS */
 
 /* MOBILE INFO SECTION 3 */
 #planetInfoGlobe{
@@ -667,6 +766,35 @@ input:checked + label .description {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+/* /MOBILE INFO SECTION 3 */
 
+/* MOBILE FOOTER */
+.bottomfooter{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0px;
+}
+.returnhomelink{
+    width: 100px;
+    height: 70px;
+    padding: 20px;
+}
+
+.bottomfooter-logo{
+    width:60px;
+    height:30px;
+}
+
+.bottomfooter-info{
+    font-size: 10px;
+    flex-direction: column;
+}
+
+.bottomfooter-socialmedia{
+    width:20%;
+    margin:10px;
+}
 }
 /* MOBILE MEDIA QUERIE */
