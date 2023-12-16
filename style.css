@@ -20,7 +20,7 @@ body{
     display:none;
 }
 
-.frontpage-section1{
+.mobile-frontpage-section1{
     display:none;
 }
 
@@ -368,7 +368,6 @@ input:checked + label .description {
     flex-direction: row;
     font-family: 'Righteous', sans-serif;
     font-weight: 400;
-    color: rgb(218, 227, 235);
 }
 
 .bottomfooter-creator{
@@ -503,7 +502,7 @@ input:checked + label .description {
 /* /MOBILE HEADER MENU OPTIONS*/
 
 /* MOBILE FRONT PAGE SECTION 1 */
-.frontpage-section1{
+.mobile-frontpage-section1{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -788,7 +787,8 @@ input:checked + label .description {
 }
 
 .bottomfooter-info{
-    font-size: 10px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 8px;
     flex-direction: column;
 }
 

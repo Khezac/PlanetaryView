@@ -31,8 +31,10 @@
             </div>
 
             <div class="mobile-header">
-                <img src="IMG/Logos/PageLogo/GradientLogo.png" alt="header-logo" class="mobile-header-logo">
-                <div id="mobile-header-menu-wrapper" onclick="toggleMobileMenu(this)">
+                <a href="#home">
+                    <img src="IMG/Logos/PageLogo/GradientLogo.png" alt="header-logo" class="mobile-header-logo">
+                </a>
+                    <div id="mobile-header-menu-wrapper" onclick="toggleMobileMenu(this)">
                     <img src="IMG/Mobile_Media/MenuNav/MenuNav-Icon.jpg" alt="mobile-header-menu-button" class="mobile-header-menu-button-icon">
                     <div class="mobile-header-menu-options-wrapper" onclick="toggleMobileMenu(this)">
                         <div class="mobile-header-menu-options">
@@ -48,7 +50,8 @@
                                 </a>
                             </div>
                             <div class="mobile-header-menu-items">
-                            <a class="header-menu-item" href="#cardswrapper" >Planets</a>
+                            <a class="header-menu-item" href="#home" >Home</a>
+                            <a class="header-menu-item" href="#mobilecardswrapper" >Planets</a>
                             <a class="header-menu-item" href="https://github.com/Khezac/PlanetaryView" target="_blank">Open Source</a>
                             <a class="header-menu-item" href="https://github.com/Khezac/PlanetaryView/blob/main/README.md" target="_blank">About</a>
                             </div>
@@ -69,7 +72,7 @@
             </div>
         </section>
 
-        <section class="frontpage-section1">
+        <section class="mobile-frontpage-section1">
             <div class="frontpage-section1-title">
                 <img class="content-section1-logo" src="IMG/Logos/PageLogo/BlueGlobeLogo.png" loading="lazy" alt="BlueGlobeSection1"/>
                 <img class="content-section1-presentation-title" src="IMG/Logos/PageLogo/Section1MainTitleBlue.png" loading="lazy" alt="Section1Title"/>
@@ -78,7 +81,7 @@
             <div class="content-section1-presentation">
                 <h2 class="content-section1-caption1">Olá! Seja bem-vindo(a) ao Planetary View!!!</h2><br>
                 <h2 class="content-section1-caption2">Aqui você pode aprender sobre os planetas do nosso incrível sistema solar.</h2>
-                <a href="#cardswrapper" class="scrollpagelink-toplanets"><button class="content-section1-button">Ver mais...</button></a>
+                <a href="#mobilecardswrapper" class="scrollpagelink-toplanets"><button class="content-section1-button">Ver mais...</button></a>
             </div>
         </section>
     </div>
@@ -182,7 +185,7 @@
             <div id="mobilecardswrapper" class="mobilecardswrapper" alt="planetscardswrapper">
                 <div class="container">
                     <div class="mercury-card" id="cards-format">
-                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                        <a href="#mercuryinfo" class="linkto-planet" alt="link-to-planet">
                             <div class="card-texts">
                                 <h4>Mercúrio</h4>
                                 <p>O mais veloz mensageiro.</p>
@@ -191,7 +194,7 @@
                     </div>
 
                     <div class="venus-card" id="cards-format">
-                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                        <a href="#venusinfo" class="linkto-planet" alt="link-to-planet">
                             <div class="card-texts">
                                 <h4>Vênus</h4>
                                 <p>Terceiro corpo celeste mais brilhante do céu.</p>
@@ -200,7 +203,7 @@
                     </div>
 
                     <div class="earth-card" id="cards-format">
-                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                        <a href="#earthinfo" class="linkto-planet" alt="link-to-planet">
                             <div class="card-texts">
                                 <h4>Terra</h4>
                                 <p>Grandioso planeta água.</p>
@@ -209,7 +212,7 @@
                     </div>
 
                     <div class="mars-card" id="cards-format">
-                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                        <a href="#marsinfo" class="linkto-planet" alt="link-to-planet">
                             <div class="card-texts">
                                 <h4>Marte</h4>
                                 <p>O mais violento entre os planetas.</p>
@@ -218,7 +221,7 @@
                     </div>
 
                     <div class="jupiter-card" id="cards-format">
-                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                        <a href="#jupiterinfo" class="linkto-planet" alt="link-to-planet">
                             <div class="card-texts">
                                 <h4>Jupiter</h4>
                                 <p>Pai romano de Marte.</p>
@@ -227,7 +230,7 @@
                     </div>
 
                     <div class="saturn-card" id="cards-format">
-                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                        <a href="#saturninfo" class="linkto-planet" alt="link-to-planet">
                             <div class="card-texts">
                                 <h4>Saturno</h4>
                                 <p>Gigante gasoso pai de júpiter.</p>
@@ -236,7 +239,7 @@
                     </div>
 
                     <div class="uranus-card" id="cards-format">
-                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                        <a href="#uranusinfo" class="linkto-planet" alt="link-to-planet">
                             <div class="card-texts">
                                 <h4>Urano</h4>
                                 <p>Filho de gaia, personificação do céu.</p>
@@ -245,7 +248,7 @@
                     </div>
 
                     <div class="neptune-card" id="cards-format">
-                        <a href="#home" class="linkto-planet" alt="link-to-planet">
+                        <a href="#neptuneinfo" class="linkto-planet" alt="link-to-planet">
                             <div class="card-texts">
                                 <h4>Netuno</h4>
                                 <p>O rei dos oceanos.</p>
@@ -281,7 +284,7 @@
                             </div>
                             <span>-</span>
                             <div class="info-bottom-options-menu">
-                                <h1><a href="#cardswrapper" class="back-to-menu">MENU</a></h1>
+                                <h1><a href="#mobilecardswrapper" class="back-to-menu">MENU</a></h1>
                             </div>
                         </div>
                     </div>
@@ -312,7 +315,7 @@
                             </div>
                             <span>-</span>
                             <div class="info-bottom-options-menu">
-                                <h1><a href="#cardswrapper" class="back-to-menu">MENU</a></h1>
+                                <h1><a href="#mobilecardswrapper" class="back-to-menu">MENU</a></h1>
                             </div>
                         </div>
                     </div>
@@ -346,7 +349,7 @@
                             </div>
                             <span>-</span>
                             <div class="info-bottom-options-menu">
-                                <h1><a href="#cardswrapper" class="back-to-menu">MENU</a></h1>
+                                <h1><a href="#mobilecardswrapper" class="back-to-menu">MENU</a></h1>
                             </div>
                         </div>
                     </div>
@@ -380,7 +383,7 @@
                             </div>
                             <span>-</span>
                             <div class="info-bottom-options-menu">
-                                <h1><a href="#cardswrapper" class="back-to-menu">MENU</a></h1>
+                                <h1><a href="#mobilecardswrapper" class="back-to-menu">MENU</a></h1>
                             </div>
                         </div>
                     </div>
@@ -403,7 +406,7 @@
                     <div class="content-section3-planets-maininfo">
                         <h1 class="content-section3-planets-maininfo-title">Júpiter, o governante do olimpo</h1>
                         <p class="content-section3-planets-maininfo-paragraph">
-                            Júpiter é o maior planeta do sistema solar, sendo maior do que todos os outros planetas do sistema 
+                            Júpiter é o maior planeta do sistema solar, sendo maior do que todos os outros pl   anetas do sistema 
                             solar juntos. Foi batizado com esse nome em homenagem ao governante do Olimpo, Júpiter, o 
                             deus dos deuses. Assim como Saturno, Jupiter também possui um sistema de anéis, porém, melhor brilhantes 
                             e muito mais finos. Júpiter foi observado a primeira vez por Galileu Galilei, em 1610. 
@@ -416,7 +419,7 @@
                             </div>
                             <span>-</span>
                             <div class="info-bottom-options-menu">
-                                <h1><a href="#cardswrapper" class="back-to-menu">MENU</a></h1>
+                                <h1><a href="#mobilecardswrapper" class="back-to-menu">MENU</a></h1>
                             </div>
                         </div>
                     </div>
@@ -453,7 +456,7 @@
                             </div>
                             <span>-</span>
                             <div class="info-bottom-options-menu">
-                                <h1><a href="#cardswrapper" class="back-to-menu">MENU</a></h1>
+                                <h1><a href="#mobilecardswrapper" class="back-to-menu">MENU</a></h1>
                             </div>
                         </div>
                     </div>
@@ -496,7 +499,7 @@
                             </div>
                             <span>-</span>
                             <div class="info-bottom-options-menu">
-                                <h1><a href="#cardswrapper" class="back-to-menu">MENU</a></h1>
+                                <h1><a href="#mobilecardswrapper" class="back-to-menu">MENU</a></h1>
                             </div>
                         </div>
                     </div>
@@ -538,7 +541,7 @@
                             </div>
                             <span>-</span>
                             <div class="info-bottom-options-menu">
-                                <h1><a href="#cardswrapper" class="back-to-menu">MENU</a></h1>
+                                <h1><a href="#mobilecardswrapper" class="back-to-menu">MENU</a></h1>
                             </div>
                         </div>
                     </div>
@@ -552,7 +555,7 @@
             <img class="bottomfooter-logo" src="IMG/Logos/PageLogo/GrayLogo.png" loading="lazy" alt="BottomLeftFooterLogo">
         </a>
 
-        <div class="bottomfooter-info">
+        <div class="bottomfooterinfo">
             <a class="bottomfooter-creator" href="https://github.com/Khezac" target="_blank">@Khezac</a>
             <p id="bottomfooter-releasedate">, Released in December 4th 2023.</p>
         </div>
